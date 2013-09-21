@@ -16,12 +16,7 @@ Boty. Klasa `AbstractBot` musi:
 ### Konfiguracja bazy
 Do działania potrzebna jest plik konfiguracja bazy `configs/database.php':
 
-return array(
-    'host'      => 'nazwa hosta',
-    'user'      => 'nazwa uzytkownika',
-    'password'  => 'hasło',
-    'database'  => 'nazwa bazy'
-);
+`return array('host'=>..,'user'=>..,'password'=>..,'database'=>..);`
 
 ### Skrypty
 - `populate_queue.php` mieli strimy i dodaje linki do bazy
