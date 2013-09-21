@@ -34,7 +34,7 @@ class LosowyImgur extends AbstractStrim
             // minumium 50 KB
             if($test < 50*1024) return imgur_get_random_photo($tries - 1);
             
-            if(strpos($raw, 'File not found!')) return  imgur_get_random_photo();
+            if(strpos($raw, 'File not found!')) return imgur_get_random_photo($tries - 1);
 
             return $url;
         }
