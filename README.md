@@ -7,8 +7,8 @@ Po poprawnej instalacji wystarczy operować tylko na dwóch katalogach aby skryp
 ### modules/strimy/
 Strimy. Klasa `AbstractStrim` musi:
 - być nazwą strimu
-- metodę `getListings` zwracającą tablicę z obiektamy `Listring`
-- zmienna `$bot_name` musi zostać ustawiona
+- posiadać metodę `getListings` zwracającą tablicę z obiektami `Listing`
+- posiadać zmienną `$bot_name` (ten bot będzie dodawał treści do strimu)
 
 ### modules/boty/
 Boty. Klasa `AbstractBot` musi:
