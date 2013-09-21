@@ -2,9 +2,11 @@
 
 Gotowy framework do tworzenia botów.
 
+Po poprawnej instalacji wystarczy operować tylko na dwóch katalogach aby skrypt działał:
+
 ### modules/strimy/
 Strimy. Klasa `AbstractStrim` musi:
-- być nazwą strimy
+- być nazwą strimu
 - metodę `getListings` zwracającą tablicę z obiektamy `Listring`
 - zmienna `$bot_name` musi zostać ustawiona
 
@@ -13,10 +15,12 @@ Boty. Klasa `AbstractBot` musi:
 - być nazwą bota (nazwa użytkownika strims)
 - posiadać zmienną `$password` z hasłem użytkownika
 
-### Konfiguracja bazy
-Do działania potrzebna jest plik konfiguracja bazy `configs/database.php':
-
+### Instalacja
+1. Do działania potrzebny jest plik konfiguracja bazy `configs/database.php':
 `return array('host'=>..,'user'=>..,'password'=>..,'database'=>..);`
+2. Trzeba stworzyć bazę danych korzystając z pliku `database.sql`
+3. Katalogi w `tmp/` powinny mieć prawa do zapisu
+4. Należy ustawić crontab dla dwóch skryptów (patrz niżej)
 
 ### Skrypty
 - `populate_queue.php` mieli strimy i dodaje linki do bazy
