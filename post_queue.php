@@ -14,10 +14,10 @@ require_dir_once(DIR_MODULES . "strimy/");
 
 Log::Add('Wczytuje opcje');
 
-$options = get_options(array(
+$options = array(
     'limit'         => 45, // max 45 treści na 45 minut
     'time_limit'    => 60*45 // 45 minut
-));
+);
 
 Log::Add('Opcje: ' . print_r($options, true));
 

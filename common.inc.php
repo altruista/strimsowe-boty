@@ -17,9 +17,3 @@ function require_dir_once($path)
     }
     return $files;
 }
-
-function get_options($defaults)
-{
-    $options = array();
-    return array_merge($defaults, $options);
-}
