@@ -1,6 +1,6 @@
 ## Moje strimsowe boty
 
-Gotowy framework do tworzenia botów.
+Gotowy "framework" do tworzenia botów.
 
 Po poprawnej instalacji wystarczy operować tylko na dwóch katalogach aby skrypt działał:
 
