@@ -18,7 +18,7 @@ class GlownaWykopu extends AbstractStrim
 		'url'       => find_one_between($article, "\tz <a href=\"", '"'),
                 'wykop_url' => find_one_between($article, '<p class="lheight18"><a href="', '"')
             );
-            if(!$article->url)
+            if( ! $article->url )
                 unset($articles[$index]);
         }
         
@@ -26,7 +26,7 @@ class GlownaWykopu extends AbstractStrim
         foreach($articles as $link)
         {    
             // sponsorowanym podziękujemy ;x
-            if(strpos($link->url, 'wykop.pl/link/partnerredirect/') !== false)
+            if( strpos($link->url, 'wykop.pl/link/partnerredirect/') !== false )
 		continue ;
             
             // to z czasów afery zbożowej :D
